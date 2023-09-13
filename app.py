@@ -11,7 +11,7 @@ from langchain.utilities import WikipediaAPIWrapper
 os.environ['OPENAI_API_KEY'] = apikey
 
 
-st.title('🦜🔗 Youtube GPT creator')
+st.title('🫵🚇 Youtube Video Script Generator')
 prompt = st.text_input('Enter a prompt for the AI to complete')
 
 #prompt template
