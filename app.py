@@ -1,5 +1,5 @@
 import os
-
+from dotenv import load_dotenv
 import streamlit as st
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
@@ -7,7 +7,8 @@ from langchain.chains import LLMChain
 from langchain.memory import ConversationBufferMemory
 from langchain.utilities import WikipediaAPIWrapper
 
-apikey = os.environ['OPENAI_API_KEY'] 
+load_dotenv()
+openai_api_key = os.environ['OPENAI_API_KEY'] 
 
 
 st.title('🫵🚇 Youtube Video Script Generator')
