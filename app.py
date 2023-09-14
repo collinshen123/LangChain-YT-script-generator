@@ -7,8 +7,10 @@ from langchain.chains import LLMChain
 from langchain.memory import ConversationBufferMemory
 from langchain.utilities import WikipediaAPIWrapper
 
-load_dotenv()
-openai_api_key = os.environ['OPENAI_API_KEY'] 
+# load_dotenv()
+# openai_api_key = os.environ['OPENAI_API_KEY'] 
+
+os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 
 
 st.title('🫵🚇 Youtube Video Script Generator')
