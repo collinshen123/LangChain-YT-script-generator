@@ -11,9 +11,6 @@ from langchain.utilities import WikipediaAPIWrapper
 load_dotenv()
 openai_api_key = os.environ['OPENAI_API_KEY'] 
 
-# # os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
-
-
 st.title('🫵🚇Youtube Video Script Generator')
 st.write("")
 prompt = st.text_input('Enter a prompt for the AI to complete')
